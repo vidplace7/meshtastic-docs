@@ -41,3 +41,10 @@ Starwatcher:
   socials:
     linkedin: https://www.linkedin.com/in/matthew-patrick-97996528a/
     github: mrpatrick1991
+vid:
+  name: vid
+  title: "Lead: Linux Packaging & Distribution"
+  url: https://github.com/vidplace7
+  image_url: https://github.com/vidplace7.png
+  socials:
+    github: vidplace7

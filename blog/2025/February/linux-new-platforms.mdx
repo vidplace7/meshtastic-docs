@@ -1,0 +1,43 @@
+---
+title: "New Linux Platforms"
+description: "Linux support for Meshtastic has been expanded to include a wider range of distributions and hardware options."
+slug: linux-new-platforms
+authors: vid
+tags: ["meshtastic", "linux", "debian", "ubuntu", "fedora", "raspberry pi"]
+date: 2025-02-01T12:00
+hide_table_of_contents: false
+image: "/img/blog/meshplanner-demo.png"
+---
+
+import { Icon } from "@iconify/react";
+
+The Meshtastic Team has been hard at work improving the Linux experience. We are excited to announce a number of new ways to use Meshtastic on Linux devices.
+This includes support for more distributions and hardware options, as well as new features and improvements.
+
+{/* truncate */}
+
+## <Icon icon="mdi:usb"/> USB Support
+
+Meshtastic 2.5.18 introduced support for USB devices using the **CH341** chipset. Run Meshtastic straight from a typical computer with a simple USB adapter, no need for a dedicated device or Raspberry Pi.
+
+This feature was made possible thanks to the [CH341 userspace driver](https://github.com/pine64/libch341-spi-userspace) developed by Pine64 and Jonathan Bennett. The driver is included in the `meshtasticd` package, so you can get started right away!
+
+Special thanks to Mark Birss for designing the [MeshStick](https://github.com/markbirss/MESHSTICK) USB adapter, which was used for developing and testing this feature.
+
+## New Platforms, New Possibilities
+
+Meshtastic 2.5.20 brings support for additional Linux distributions and hardware platforms.
+
+- <Icon icon="mdi:fedora"/> Fedora packages have been added via [Fedora COPR](https://copr.fedorainfracloud.org/coprs/g/meshtastic/beta/).
+
+- <Icon icon="mdi:ubuntu"/> Ubuntu packages have been added via [Canonical Launchpad (PPA)](https://launchpad.net/~meshtastic/+archive/ubuntu/beta).
+
+- <Icon icon="mdi:debian"/> Debian and Raspbian packages have been overhauled to use [OpenSUSE Build Service](https://build.opensuse.org/package/show/network:Meshtastic:beta/meshtasticd).
+
+- <Icon icon="mdi:docker"/> Docker images for Debian and Alpine Linux are now available on [Docker Hub](https://hub.docker.com/r/meshtastic/meshtastic).
+
+These packages are provided for many architectures, depending on support from the distribution systems, including `x86_64`, `arm64`, `armhf` (Pi 2, Zero / Luckfox Pico) and more.
+The architecture is automatically detected by the package manager, and selected depending on the system.
+
+For more information about installing our packages on your system, refer to the [installation instructions](/docs/installation/linux/).
+
